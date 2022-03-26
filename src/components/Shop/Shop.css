@@ -8,6 +8,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
+.cart-container button {
+  padding: 10px 25px;
+  border-radius: 7px;
+  border: 0;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.cart-container button:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
 
 @media only screen and (max-width: 1250px) {
   .shop-container {

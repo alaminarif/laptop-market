@@ -6,6 +6,9 @@ import "./Shop.css";
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [carts, setCart] = useState([]);
+  const choiceAgain = () => {
+    setCart();
+  };
   const handleAddToCart = (product) => {
     const newCart = [...carts, product];
     setCart(newCart);
@@ -24,7 +27,12 @@ const Shop = () => {
         ))}
       </div>
       <div className="cart-container">
-        <Cart cart={carts}></Cart>
+        <h2>Choice Laptop</h2>
+        {carts.map((cart) => (
+          <Cart cart={cart}></Cart>
+        ))}
+        <button>choice one for me</button> <br />
+        <button onClick={choiceAgain}>Choice Again</button>
       </div>
     </div>
   );
