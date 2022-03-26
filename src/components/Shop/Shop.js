@@ -7,10 +7,7 @@ const Shop = () => {
   const [products, setProducts] = useState([]);
   const [carts, setCart] = useState([]);
   const choiceAgain = () => setCart([]);
-  const choiceOneForMe = () => {
-    const ramdom = Math.random();
-    console.log(ramdom);
-  };
+
   const handleAddToCart = (product) => {
     const newCart = [...carts, product];
     setCart(newCart);
@@ -31,9 +28,9 @@ const Shop = () => {
       <div className="cart-container">
         <h2>Choice Laptop</h2>
         {carts.map((cart) => (
-          <Cart cart={cart}></Cart>
+          <Cart cart={cart} key={cart.id}></Cart>
         ))}
-        <button onClick={choiceOneForMe}>choice one for me</button> <br />
+        <button>choice one for me</button>
         <button onClick={choiceAgain}>Choice Again</button>
       </div>
     </div>
