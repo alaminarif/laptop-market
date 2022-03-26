@@ -1,0 +1,38 @@
+.product {
+  border: 1px solid blueviolet;
+  width: 300px;
+  margin: 7px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.product img {
+  height: 286px;
+  width: 286px;
+  margin: 7px;
+  border-radius: 8px;
+}
+.product h6 {
+  font-size: 16px;
+  margin: 7px;
+}
+.price {
+  margin: 15px 0;
+  padding-left: 8px;
+}
+.product button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  border: 0;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.product button:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+.product button p {
+  margin-right: 10px;
+}
