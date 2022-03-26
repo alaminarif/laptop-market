@@ -1,3 +1,11 @@
+.cart {
+  display: flex;
+}
+.cart img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 .cart p {
   margin: 10px 20px;
 }

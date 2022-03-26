@@ -6,8 +6,10 @@ import "./Shop.css";
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [carts, setCart] = useState([]);
-  const choiceAgain = () => {
-    setCart();
+  const choiceAgain = () => setCart([]);
+  const choiceOneForMe = () => {
+    const ramdom = Math.random();
+    console.log(ramdom);
   };
   const handleAddToCart = (product) => {
     const newCart = [...carts, product];
@@ -31,7 +33,7 @@ const Shop = () => {
         {carts.map((cart) => (
           <Cart cart={cart}></Cart>
         ))}
-        <button>choice one for me</button> <br />
+        <button onClick={choiceOneForMe}>choice one for me</button> <br />
         <button onClick={choiceAgain}>Choice Again</button>
       </div>
     </div>
